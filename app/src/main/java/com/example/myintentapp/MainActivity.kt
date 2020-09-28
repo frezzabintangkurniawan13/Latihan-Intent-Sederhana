@@ -55,7 +55,7 @@ fun findViewById(btnMoveActivity: Int): Button {
 override fun onClick(v: View) {
         when (v.id) {
             R.id.btn_move_activity -> {
-                val moveIntent = Intent(this@ MainActivity, MoveActivity::class.java)
+                val moveIntent = Intent(this@MainActivity, MoveActivity::class.java)
                 startActivity(moveIntent)
 
                 R.id.btn_move_for_result -> {
