@@ -4,15 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class MoveWidthDataActivity : AppCompatActivity() {
+class MoveWithDataActivity : AppCompatActivity() {
 
-    companion object{
-        fun putExtra(extraAge: String, i: Int) {
-        }
-
-        const val EXTRA_AGE ="extra_age"
-        const val EXTRA_NAME ="extra_name"
+    companion object {
+        const val EXTRA_AGE = "extra_age"
+        const val EXTRA_NAME = "extra_name"
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_move_with_data)
@@ -21,8 +19,7 @@ class MoveWidthDataActivity : AppCompatActivity() {
 
         val name = intent.getStringExtra(EXTRA_NAME)
         val age = intent.getIntExtra(EXTRA_AGE, 0)
-
-        val text = "NAME :  $name, your AGE : $age"
+        val text = "Name : $name, Your Age : $age"
         tvDataReceived.text = text
     }
 }
